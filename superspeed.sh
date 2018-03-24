@@ -402,18 +402,16 @@ if [[ ${telecom} == 5 ]]; then
 	echo ""
 	printf "%-14s%-18s%-20s%-12s\n" "Node Name" "Upload Speed" "Download Speed" "Latency"
 	start=$(date +%s) 
-    speed_test '6435' '襄阳电信'
-    speed_test '7509' '昆明电信'
+        speed_test '5081' '深圳电信'
+        speed_test '4515' '深圳移动'
 	speed_test '3633' '上海电信'
+	speed_test '5083' '上海联通'
+	speed_test '5300' '杭州联通'
 	speed_test '4624' '成都电信'
 	speed_test '5017' '沈阳联通'
-	speed_test '4863' '西安联通'
-	speed_test '5083' '上海联通'
 	speed_test '5726' '重庆联通'
 	speed_test '5292' '西安移动'
-	speed_test '16314' '山东移动'
-    speed_test '6715' '宁波移动'
-	speed_test '4575' '成都移动'
+        speed_test '6715' '宁波移动'
 	end=$(date +%s)  
 	rm -rf /tmp/speedtest.py
 	echo ""
